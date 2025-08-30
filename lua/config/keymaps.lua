@@ -2,6 +2,10 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader><leader>', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 
+-- split
+vim.keymap.set("n", "<leader>sh", ":split<CR>", { desc = "Split horizontal" })
+vim.keymap.set("n", "<leader>sv", ":vsplit<CR>", { desc = "Split vertical" })
+
 -- normal mode
 vim.keymap.set("i", "kj", "<Esc>")
 vim.keymap.set("i", "jk", "<Esc>")
